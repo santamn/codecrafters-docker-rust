@@ -3,7 +3,7 @@ use anyhow::{Context, Result};
 // Usage: your_docker.sh run <image> <command> <arg1> <arg2> ...
 fn main() -> Result<()> {
     // You can use print statements as follows for debugging, they'll be visible when running tests.
-    println!("Logs from your program will appear here!");
+    // println!("Logs from your program will appear here!");
 
     // Uncomment this block to pass the first stage!
     let args: Vec<_> = std::env::args().collect();
@@ -28,4 +28,3 @@ fn main() -> Result<()> {
 
     Ok(())
 }
-
