@@ -22,6 +22,9 @@ fn main() -> Result<()> {
     if output.status.success() {
         let std_out = std::str::from_utf8(&output.stdout)?;
         print!("{}", std_out);
+        // outputの標準エラー出力も出力する
+        let std_err = std::str::from_utf8(&output.stderr)?;
+        eprint!("{}", std_err);
     } else {
         std::process::exit(1);
     }
