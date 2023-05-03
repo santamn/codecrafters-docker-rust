@@ -25,5 +25,6 @@ fn main() -> Result<()> {
     } else {
         std::process::exit(1);
     }
+
     Ok(())
 }
